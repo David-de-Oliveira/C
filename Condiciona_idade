@@ -1,0 +1,27 @@
+# C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+  char nome[256];
+  int idade;
+
+  printf("Informe seu nome: \n");
+  scanf("%s", &nome);
+  printf("Informe sua idade:  \n");
+  scanf("%d", &idade);
+  printf("Aguarde...\n");
+  printf("O seu nome eh %s, sua idade eh %d e a primeira letra do seu nome eh: %c!", nome, idade, nome[0]);
+  
+  if (idade >= 18){
+  	printf("\nVoce eh adulto!");
+  }else if(idade >= 12){
+  	printf("\nVoce eh adolescente!");
+  }else{
+  	printf("\nVoce eh crianca!");
+  }
+
+
+
+return 0;
+}
